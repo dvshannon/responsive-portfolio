@@ -68,16 +68,23 @@ a:hover {
     background-image: url(/Users/deyonshannon/code/repositories/basic-portfolio/assets/images/white-waves.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
+
+
+
+
 .container {
-    max-width: 960px;
     position: relative;
     border: solid 1px #ddd;
-    margin: 0 auto;
     background: #fff;
     padding: 15px;
     overflow: auto;
+    max-width: 650px;
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
 }
 .container:nth-child(even) {
     margin-right: 40px;
@@ -93,28 +100,26 @@ h1 {
 }
 
 img {
-    float: center;
-    padding-right: 10px;
+
     margin-top: 20px;
-    width: 300px;
-    float: left;
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
 }
 
-.img-box {
-    padding: 10px 15px;
-    color: #fff;
-    bottom: 20px;
-    position: relative;
-    opacity: 0.8;
-    float: left;
-    height: 200px;;
-    margin-top: 10px;
-    margin-right: 25px;
+.img-box { 
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: hidden;
+  margin-right: 40px;
 }
+
 .img-box p {
     position: absolute;
     bottom: 20px;
-    width: 200px;
+    width: 100%;
     padding: 15px;
     margin-bottom: 0;
     font-weight: 300;
@@ -124,6 +129,10 @@ img {
     background: #4aaaa5;
     border-bottom: 0;
 }
+
+
+
+
 
 footer {
     border-top: 8px solid #4aaaa5;
@@ -206,3 +215,20 @@ footer p {
         padding-top: 15px;
     }
   }  
+
+
+
+
+
+  
+  .auth-image {
+    float: left;
+  
+    /* Box-model */
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+  
+    /* Positioning */
+    margin-right: 25px;
+  }
